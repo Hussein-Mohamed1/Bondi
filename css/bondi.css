@@ -1,0 +1,236 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* start nav */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav svg {
+    color: var(--green-color);
+}
+
+.navbar .icon {
+    border-left: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+
+.btn {
+    background-color: var(--red-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--red-color);
+    opacity: 0.5;
+    color: white;
+}
+
+/* end nav */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 60px);
+}
+
+/* start feature */
+.main-head::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -20px;
+}
+
+.feature .icons {
+    height: 200px;
+}
+
+.feature .icons svg:first-child {
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--section-color);
+}
+
+.feature .icons svg:last-child {
+    height: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--green-color);
+}
+
+.feature .design h4 {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+/* end feature */
+/* start our work  */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work .nav-link:not(.btn) {
+    color: black;
+}
+
+.our-work .nav-link:not(.btn):hover {
+    color: var(--red-color);
+}
+
+.our-work .work-img {
+    overflow: hidden;
+}
+
+.our-work .work-img::before {
+    content: "application";
+    width: calc(100% - 24px);
+    height: 100%;
+    position: absolute;
+    background-color: #33d1cca6;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: translateX(calc(-100% - 12px));
+    transition: 0.3s;
+}
+
+.our-work .work-img:hover::before {
+    transform: translateX(0);
+}
+
+/* end our work  */
+/* start out team  */
+.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team h2 {
+    color: var(--yellow-color);
+}
+
+.our-team h4 {
+    background-color: var(--green-color);
+}
+
+/* end out team  */
+/* start project  */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* end project  */
+/* start blog  */
+.blog {
+    background-color: var(--section-color);
+}
+/* start blog  */
+/* start subscribe  */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .input-email input::placeholder {
+    color: white;
+    font-weight:500;
+}
+.subscribe .input-email input {
+    caret-color: white;
+    border: none;
+    outline: none;
+    background-color: var(--yellow-color);
+}
+.subscribe .input-email::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    background-color: white;
+    height: 1px;
+    top: 30px;
+    right: -45%;
+    transform: translateX(-50%);
+}
+.subscribe .btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.subscribe .btn:hover {
+    background-color: black;
+}
+/* end subscribe  */
+/* start footer  */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copy-right {
+    font-size: 18px;
+}
+.footer .copy-right span {
+    color: var(--green-color);
+}
+.footer .copy span {
+    color: var(--yellow-color);
+}
+.footer .links li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+.footer .links li a:hover {
+    color: var(--red-color);
+}
+.footer .fa-facebook {
+    color: #1877f2;
+    background-color: white;
+    cursor: pointer;
+}
+.footer .fa-linkedin {
+    color: #0077b5;
+}
+.footer .fa-x-twitter {
+    color: black;
+}
+.footer .fa-github {
+    color: black;
+}
+/* end footer  */
